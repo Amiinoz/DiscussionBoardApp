@@ -11,33 +11,33 @@ With the following features:
 
 ## Objectives
 
-* [ ] 📝 Diagram the Full Stack
-* [ ] 🔎 Differentiate between Client and Server
-* [ ] ⌨️ Get user input on the Client
-* [ ] ➡️ Send user input from the client with fetch to the server
-* [ ] 🗃 Store data in a database
-* [ ] 🔍 Retrieve data from a database on the Server
-* [ ] ⬅️ Retrieve data from a server on the client using Fetch
-* [ ] 🙈 Hide/Show elements on the client
-* [ ] ✨ Add elements to the page on the client
-* [ ] 🚀 Deploy the client with now.sh
-* [ ] 🚀 Deploy the database with mlab
-* [ ] 🚀 Deploy the server with now.sh
+* [x] 📝 Diagram the Full Stack
+* [x] 🔎 Differentiate between Client and Server
+* [x] ⌨️ Get user input on the Client
+* [x] ➡️ Send user input from the client with fetch to the server
+* [x] 🗃 Store data in a database
+* [x] 🔍 Retrieve data from a database on the Server
+* [x] ⬅️ Retrieve data from a server on the client using Fetch
+* [x] 🙈 Hide/Show elements on the client
+* [x] ✨ Add elements to the page on the client
+* [x] 🚀 Deploy the client with now.sh
+* [x] 🚀 Deploy the database with mlab
+* [x] 🚀 Deploy the server with now.sh
 
 ## Front-end
 
-* [ ] Create client folder
-* [ ] Setup index.html
-* [ ] Bring in Skeleton CSS
+* [x] Create client folder
+* [x] Setup index.html
+* [x] Bring in Skeleton CSS
   * http://getskeleton.com/
   * https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css
-* [ ] Create Header
-* [ ] Create form
-  * [ ] Name
-  * [ ] Chat room
-  * [ ] Content
+* [x] Create Header
+* [x] Create form
+  * [x] Name
+  * [x] Chat room
+  * [x] Content
   * [ ] Log In
-* [ ] Listen for form submit
+* [*] Listen for form submit
 * [ ] Hide the form
 * [ ] Show loading spinner
 * [ ] Get data from form and log it
