@@ -139,3 +139,6 @@ With the following features:
 * Hashtags
 * User @mentions
 * Realtime feed of messages
+
+## Credits
+* Photo by Volodymyr Hryshchenko  at https://unsplash.com/photos/V5vqWC9gyEU
