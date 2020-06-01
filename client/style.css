@@ -1,6 +1,6 @@
 
-body{
-  margin-top: 30px;
+header{
+  padding-top: 70px;
 }
 .logo img {
   width: 153px;
@@ -13,13 +13,6 @@ body{
   padding-right: 104px;
 }
 
-.container {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
 .banner {
   height: 25vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
@@ -34,14 +27,21 @@ body{
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.64);
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.64);
   margin-bottom: 30px;
+
 }
 
-.banner h1 {
+.container .banner h1 {
+  /* position: absolute;
   text-align: center;
-  padding-top: 96px;
+  padding-top: 80px; */
+   position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   color: #fff;
 }
 
 form {
   color: black;
-  padding-top: 30px;
+  padding-top: 20px;
 }

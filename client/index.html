@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitter Colone</title>
+    <title>EvolveU Discussion Board</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
@@ -43,22 +43,23 @@
           </div>
           <div class="six columns">
             <label for="exampleRecipientInput">Discussion Topic</label>
-            <select class="u-full-width" id="exampleRecipientInput">
-              <option value="Option 1">Code</option>
-              <option value="Option 2">Mentor</option>
-              <option value="Option 3">Chat</option>
+            <select class="u-full-width" id="topic" name="topic">
+              <option value="Code">Code</option>
+              <option value="Mentor" selected="selected">Mentor</option>
+              <option value="Chat">Chat</option>
             </select>
           </div>
         </div>
-        <label for="exampleMessage">Message</label>
+        <label for="Message" >Your Message</label>
         <textarea
           class="u-full-width"
           placeholder="Hello…"
-          id="exampleMessage"
+          id="content" name='content'
         ></textarea>
         <input class="button-primary" type="submit" value="Post" />
       </form>
 
     </div>
+    <script src="client.js"></script>
   </body>
 </html>
