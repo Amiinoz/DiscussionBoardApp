@@ -1,0 +1,47 @@
+
+body{
+  margin-top: 30px;
+}
+.logo img {
+  width: 153px;
+  height: 29px;
+  float: left;
+}
+
+.logIn {
+  float: right;
+  padding-right: 104px;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.banner {
+  height: 25vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(images/discBoard.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Alex Brush", cursive;
+  margin-bottom: 40px;
+  margin-top: 24px;
+  border-radius: 7px;
+  box-shadow: 1px 1px px 0px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.64);
+  margin-bottom: 30px;
+}
+
+.banner h1 {
+  text-align: center;
+  padding-top: 96px;
+}
+
+form {
+  color: black;
+  padding-top: 30px;
+}

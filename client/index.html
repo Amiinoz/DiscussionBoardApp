@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Colone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="row">
+          <div class="one columns logo"><img src="images/EvolveU.jpg" /></div>
+          <div class="one columns logIn">
+            <input type="submit" value="Login" />
+          </div>
+        </div>
+      </header>
+
+      <div class="banner">
+        <h1>Discussion Board</h1>
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="six columns">
+            <label for="name">Your Name</label>
+            <input
+              class="u-full-width"
+              placeholder="Name"
+              type="text"
+              id="name"
+              name="name"
+            />
+          </div>
+          <div class="six columns">
+            <label for="exampleRecipientInput">Discussion Topic</label>
+            <select class="u-full-width" id="exampleRecipientInput">
+              <option value="Option 1">Code</option>
+              <option value="Option 2">Mentor</option>
+              <option value="Option 3">Chat</option>
+            </select>
+          </div>
+        </div>
+        <label for="exampleMessage">Message</label>
+        <textarea
+          class="u-full-width"
+          placeholder="Hello…"
+          id="exampleMessage"
+        ></textarea>
+        <input class="button-primary" type="submit" value="Post" />
+      </form>
+
+    </div>
+  </body>
+</html>
