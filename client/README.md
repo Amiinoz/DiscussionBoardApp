@@ -62,9 +62,9 @@ With the following features:
 
 ## Back-end
 
-* [ ] npm install cors
-* [ ] Make sure the server is recieving the data
-* [ ] Add JSON body parser middleware
+* [*] npm install cors
+* [*] Make sure the server is receiving the data
+* [*] Add JSON body parser middleware
 * [ ] Validate name and content
   * [ ] Must be a string
   * [ ] Cannot be empty

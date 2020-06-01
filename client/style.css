@@ -19,7 +19,6 @@ header {
   background-size: cover;
   background-position: center;
 
-
   margin-top: 20px;
   border-radius: 7px;
   box-shadow: 1px 1px px 0px rgba(0, 0, 0, 0.64);
@@ -39,17 +38,15 @@ header {
 
 .banner h1 {
   padding-top: 50px;
-   font-family: "Alex Brush", cursive;
-   font-weight: 700;
-
+  font-family: "Alex Brush", cursive;
+  font-weight: 700;
 }
 
 form {
-  color: black;
   margin-top: -20px;
 }
 
-.loading  {
+.loading {
   text-align: center;
   width: 50%;
   margin: 0 auto;
