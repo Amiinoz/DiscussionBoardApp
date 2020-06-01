@@ -18,7 +18,7 @@ header {
     url(images/discBoard.png);
   background-size: cover;
   background-position: center;
-  font-family: "Alex Brush", cursive;
+
 
   margin-top: 20px;
   border-radius: 7px;
@@ -39,6 +39,9 @@ header {
 
 .banner h1 {
   padding-top: 50px;
+   font-family: "Alex Brush", cursive;
+   font-weight: 700;
+
 }
 
 form {

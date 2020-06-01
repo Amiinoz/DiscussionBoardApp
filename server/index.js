@@ -10,6 +10,12 @@ app.get('/', (req, res) => {
   })
 })
 
+// create a route that waits incoming req and stores to the db
+app.post('/messages', (req, res) => {
+  console.log(req.body);
+})
+
+
 app.listen(5000, () =>{
   console.log('Listening on http://localhost:5000');
 })

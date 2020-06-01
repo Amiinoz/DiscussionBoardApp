@@ -38,9 +38,9 @@ With the following features:
   * [x] Content
   * [ ] Log In
 * [*] Listen for form submit
-* [ ] Hide the form
-* [ ] Show loading spinner
-* [ ] Get data from form and log it
+* [x] Hide the form
+* [x] Show loading spinner
+* [x] Get data from form and log it
 * ✅ Get user input on the Client
 * ✅ Hide/Show elements on the client
 

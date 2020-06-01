@@ -4,6 +4,10 @@ console.log("Hello world from client.js");
 const form = document.querySelector("form");
 // hide and show loading
 const loadingElement = document.querySelector('.loading');
+
+// state server location where you sending the req
+const API_URL = "http://localhost:5000/messages";
+
 loadingElement.style.display = 'none'
 
 form.addEventListener("submit", (event) => {
@@ -21,8 +25,16 @@ form.addEventListener("submit", (event) => {
     topic,
     content,
   };
-  console.log(messageP);
+  // console.log(messageP);
   form.style.display = "none";
   loadingElement.style.display = "";
+
+  fetch(API_URL, {
+    method: "POST",
+    body: JSON.stringify(messageP),
+    headers: {
+      'content-type': 'application/json'
+    }
+  });
 
 });
