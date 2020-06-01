@@ -1,7 +1,11 @@
 const express = require('express')
+const cors = require('cors');
 
 
 const app = express();
+
+app.use(cors());
+app.use(express.json());
 
 // define what happens whn client makes request
 app.get('/', (req, res) => {
