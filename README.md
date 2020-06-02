@@ -65,12 +65,12 @@ With the following features:
 * [*] npm install cors
 * [*] Make sure the server is receiving the data
 * [*] Add JSON body parser middleware
-* [ ] Validate name and content
-  * [ ] Must be a string
-  * [ ] Cannot be empty
-* [ ] If not valid
-  * [ ] Error code 422
-  * [ ] Invalid messageP, must be logged in, contain name and content
+* [ ] Validate name, content and topic
+  * [*] Must be a string
+  * [*] Cannot be empty
+* [*] If not valid
+  * [*] Error code 422
+  * [*] Invalid messageP, must be logged in, contain name and content
 * [ ] Setup DB Connection
   * [ ] npm install monk
   * [ ] connect to db

@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors');
 
 
+
 const app = express();
 
 app.use(cors());
@@ -31,9 +32,10 @@ app.post('/messages', (req, res) => {
        topic: req.body.topic.toString(),
         content: req.body.content.toString()
     }
-      console.log(messageP);
+      // console.log(messageP);
+   }
     // if not respond with error
-  }else {
+  else {
     res.status(422)
     res.json({
       error: "Please enter valid name and message"
