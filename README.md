@@ -56,8 +56,8 @@ With the following features:
 
 ## Front-end
 
-* [ ] fetch POST /messages with form data
-* [ ] See the CORS error and revel in this moment
+* [*] fetch POST /messages with form data
+* [*] See the CORS error and revel in this moment
 * ✅ Send user input from the client with fetch to the server
 
 ## Back-end
