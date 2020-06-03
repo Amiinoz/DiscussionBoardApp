@@ -7,7 +7,7 @@ const monk = require('monk');
 const app = express();
 
 // create a connection to the db
-const db = monk("localhost:27017/discboard2");
+const db = monk("localhost/discboard");
 const messages = db.get("messages");
 
 app.use(cors());
@@ -43,7 +43,7 @@ app.post('/messages', (req, res) => {
       name: req.body.name.toString(),
        topic: req.body.topic.toString(),
         content: req.body.content.toString(),
-        // created: new Date(),
+        created: new Date(),
         created:new Date().getTime()
 
     }

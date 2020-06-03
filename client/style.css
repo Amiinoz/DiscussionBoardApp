@@ -49,8 +49,14 @@ form {
 
 .allMessages{
   /* background-color: #30BCED; */
-  color: #fff;
+  /* color: #fff; */
   border-radius: 7px;
   width: 80%;
-  margin: 0 auto;
+
+  /* border: 1px solid black; */
+
+
+}
+#btn{
+  background-color: red;
 }
