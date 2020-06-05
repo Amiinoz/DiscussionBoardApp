@@ -90,19 +90,19 @@ With the following features:
 
 ## Back-end
 
-* [ ] GET /messages
-  * [ ] Respond with messages from DB
+* [] GET /messages
+  * [] Respond with messages from DB
 * ✅ Retrieve data from a database on the Server
 
 ## Front-end
 
-* [ ] fetch GET /messages
-  * [ ] Iterate over array
-  * [ ] Append each to page
-  * [ ] Reverse before appending
-  * [ ] Show the form
-  * [ ] Hide loading spinner
-* [ ] fetch GET /messages after creating a messageP
+* [ *] fetch GET /messages
+  * [*] Iterate over array
+  * [*] Append each to page
+  * [*] Reverse before appending
+  * [*] Show the form
+  * [*] Hide loading spinner
+* [*] fetch GET /messages after creating a messageP
 * ✅ Retrieve data from a server on the client using Fetch
 * ✅ Hide/Show elements on the client
 * ✅ Add elements to the page on the client

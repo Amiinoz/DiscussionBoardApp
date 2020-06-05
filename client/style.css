@@ -47,16 +47,14 @@ form {
   margin: 0 auto;
 }
 
-.allMessages{
-  /* background-color: #30BCED; */
-  /* color: #fff; */
+.allMessages {
+  background-color: #30bced;
+  color: #fff;
   border-radius: 7px;
   width: 80%;
 
-  /* border: 1px solid black; */
-
-
+  border: 1px solid black;
 }
-#btn{
+#btn {
   background-color: red;
 }
