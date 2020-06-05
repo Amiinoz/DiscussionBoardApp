@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const monk = require("monk");
 const Filter = require('bad-words');
+const rateLimit = require("express-rate-limit");
 
 
 
@@ -17,6 +18,7 @@ const messages = db.get("messages");
 
 app.use(cors());
 app.use(express.json());
+
 
 // define what happens whn client makes request
 app.get("/", (req, res) => {
@@ -38,6 +40,14 @@ function isValidMessageP(messageP) {
   messageP.topic && messageP.topic.toString().trim() !== " ";
   messageP.content && messageP.content.toString().trim() !== "";
 }
+
+// allow only one message per 30 sec
+app.use(
+  rateLimit({
+    windowMs: 30 * 1000, // 30 seconds
+    max: 1, // limit each IP to 1 requests per windowMs
+  })
+);
 
 // create a route that waits incoming req and stores to the db
 app.post("/messages", (req, res) => {

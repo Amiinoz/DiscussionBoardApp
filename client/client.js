@@ -45,6 +45,9 @@ form.addEventListener("submit", (event) => {
     .then((createdMessageP) => {
       // console.log(createdMessageP);
       form.reset();
+      setTimeout(() => {
+        form.style.display = "none";
+      }, 30000)
       form.style.display = "";
       listAllMessages();
       //  loadingElement.style.display = "none";
