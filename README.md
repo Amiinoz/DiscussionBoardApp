@@ -14,12 +14,13 @@ With the following features:
 * [x] 📝 Diagram the Full Stack
 * [x] 🔎 Differentiate between Client and Server
 * [x] ⌨️ Get user input on the Client
-* [] ➡️ Send user input from the client with fetch to the server
-* [] 🗃 Store data in a database
-* [] 🔍 Retrieve data from a database on the Server
-* [] ⬅️ Retrieve data from a server on the client using Fetch
-* [] 🙈 Hide/Show elements on the client
-* [] ✨ Add elements to the page on the client
+* [*] ➡️ Send user input from the client with fetch to the server
+* [*] 🗃 Store data in a database
+* [*] 🔍 Retrieve data from a database on the Server
+* [*] ⬅️ Retrieve data from a server on the client using Fetch
+* [*] 🙈 Hide/Show elements on the client
+* [*] ✨ Add elements to the page on the client
+* [*] ✨ Page navigation and search
 * [] 🚀 Deploy the client with now.sh
 * [] 🚀 Deploy the database with mlab
 * [] 🚀 Deploy the server with now.sh
@@ -46,12 +47,12 @@ With the following features:
 
 ## Back-end
 
-* [ ] Create server folder
-* [ ] npm init -y
-* [ ] npm install express morgan
-* [ ] Setup index.js
-* [ ] Add GET / route
-* [ ] Add POST /messages route
+* [*] Create server folder
+* [*] npm init -y
+* [*] npm install express morgan
+* [*] Setup index.js
+* [*] Add GET / route
+* [*] Add POST /messages route
   * [ ] log out req.body
 
 ## Front-end
@@ -71,27 +72,27 @@ With the following features:
 * [*] If not valid
   * [*] Error code 422
   * [*] Invalid messageP, must be logged in, contain name and content
-* [ ] Setup DB Connection
-  * [ ] npm install monk
-  * [ ] connect to db
-  * [ ] create document collection (messages)
-* [ ] If Valid
-  * [ ] Create messageP object with
-    * [ ] name, content, created_date
-  * [ ] Insert into DB
-  * [ ] Respond with created mew object
+* [*] Setup DB Connection
+  * [*] npm install monk
+  * [*] connect to db
+  * [*] create document collection (messages)
+* [*] If Valid
+  * [*] Create messageP object with
+    * [*] name, content, created_date
+  * [*] Insert into DB
+  * [*] Respond with created mew object
 * ✅ Store data in a database
 
 ## Front-end
 
-* [ ] Log out created messages after POST request
-* [ ] Show the form
-* [ ] Hide loading spinner
+* [*] Log out created messages after POST request
+* [*] Show the form
+* [*] Hide loading spinner
 
 ## Back-end
 
-* [] GET /messages
-  * [] Respond with messages from DB
+* [*] GET /messages
+  * [*] Respond with messages from DB
 * ✅ Retrieve data from a database on the Server
 
 ## Front-end
@@ -122,10 +123,19 @@ With the following features:
       * process.env.MONGO_URI
   * ✅ Show mlab
   * [ ] Deploy with environment variable
-    * now -e MONGO_URI=@evolveUMs-db
+    * now -e MONGO_URI=@evolveUMs-
   * [ ] Add alias
 * ✅ Deploy client folder with now
   * [ ] Set API_URL based on hostname
+
+## Improvements
+* [] Pagination
+  * Server
+    * [] Message endpoints
+    * [] Skip and limit from query params
+        * [] Defaults: skip - 0, limit - 7
+        * [] Include total count in response
+    * [] Sort messages by date
 
 ## What's next?
 

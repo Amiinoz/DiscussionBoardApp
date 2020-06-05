@@ -29,7 +29,14 @@ app.get("/", (req, res) => {
 
 // display messages on the page
 app.get("/messages", (req, res) => {
-  messages.find().then((messages) => {
+  // adding pagination
+  let skip = Number(req.query.skip) || 0;
+  let limit = Number(req.query.limit) || 3;
+
+  messages.find({} , {
+    skip,
+    limit,
+  }).then((messages) => {
     res.json(messages);
   });
 });
