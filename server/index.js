@@ -30,8 +30,11 @@ app.get("/", (req, res) => {
 // display messages on the page
 app.get("/messages", (req, res) => {
   // adding pagination
-  let skip = Number(req.query.skip) || 0;
-  let limit = Number(req.query.limit) || 3;
+  // let skip = Number(req.query.skip) || 0;
+  // let limit = Number(req.query.limit) || 7;
+
+  // destructuring
+  const { skip = 0, limit = 7} = req.query;
 
   messages.find({} , {
     skip,
