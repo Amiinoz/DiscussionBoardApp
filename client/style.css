@@ -32,7 +32,8 @@ header {
 }
 
 .banner h1 {
-  padding-top: 50px;
+  display: relative;
+  padding-top: 60px;
   font-family: "Alex Brush", cursive;
   font-weight: 700;
 }
@@ -48,12 +49,12 @@ form {
 }
 
 .allMessages {
-  background-color: #30bced;
-  color: #fff;
+  background-color: lightgrey;
   border-radius: 7px;
-  width: 80%;
+  /* width: 90%; */
+  /* margin: 0 auto; */
 
-  border: 1px solid black;
+
 }
 #btn {
   background-color: red;

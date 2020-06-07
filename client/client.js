@@ -18,12 +18,12 @@ listAllMessages();
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(form);
-  const name = formData.get("name");
+  const name ="Name:" + "" + formData.get("name");
   const content = formData.get("content");
 
   const e = document.getElementById("topic");
   const result = e.options[e.selectedIndex].text;
-  const topic = formData.get("topic");
+  const topic = "Topic of Discussion:" + " " + formData.get("topic");
 
   const messageP = {
     name,
@@ -33,6 +33,7 @@ form.addEventListener("submit", (event) => {
   // console.log(messageP);
   form.style.display = "none";
   loadingElement.style.display = "";
+
   // submit to server
   fetch(API_URL, {
     method: "POST",
@@ -46,7 +47,7 @@ form.addEventListener("submit", (event) => {
       // console.log(createdMessageP);
       form.reset();
       setTimeout(() => {
-        form.style.display = "none";
+        form.style.display = "";
       }, 30000)
       form.style.display = "";
       listAllMessages();
@@ -66,8 +67,11 @@ function listAllMessages() {
       messages.forEach((messageP) => {
         const div = document.createElement("div");
 
-        const header = document.createElement("h2");
+        const header = document.createElement("h4");
         header.textContent = messageP.name;
+
+        const topic = document.createElement('p');
+        topic.textContent = messageP.topic;
 
         const contents = document.createElement("p");
         contents.textContent = messageP.content;
@@ -77,6 +81,7 @@ function listAllMessages() {
 
         div.appendChild(header);
         div.appendChild(contents);
+        div.appendChild(topic);
         div.appendChild(date);
 
         messageElements.appendChild(div);

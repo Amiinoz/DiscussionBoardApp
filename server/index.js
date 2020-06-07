@@ -34,7 +34,7 @@ app.get("/messages", (req, res) => {
   // let limit = Number(req.query.limit) || 7;
 
   // destructuring
-  const { skip = 0, limit = 7} = req.query;
+  const { skip = 0, limit = 20} = req.query;
 
   messages.find({} , {
     skip,
@@ -55,7 +55,7 @@ function isValidMessageP(messageP) {
 app.use(
   rateLimit({
     windowMs: 30 * 1000, // 30 seconds
-    max: 1, // limit each IP to 1 requests per windowMs
+    max: 3, // limit each IP to 1 requests per windowMs
   })
 );
 
@@ -69,7 +69,7 @@ app.post("/messages", (req, res) => {
       topic: req.body.topic.toString(),
       content: filter.clean(req.body.content.toString()),
       created: new Date(),
-      created: new Date().getTime(),
+      // created: new Date().getTime(),
     };
     // insert into the db
     messages.insert(messageP).then((createdMessageP) => {
