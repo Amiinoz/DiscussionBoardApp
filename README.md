@@ -20,9 +20,9 @@ With the following features:
 * [*] ⬅️ Retrieve data from a server on the client using Fetch
 * [*] 🙈 Hide/Show elements on the client
 * [*] ✨ Add elements to the page on the client
-* [*] ✨ Page navigation and search
+* [] ✨ Page navigation and search
 * [] 🚀 Deploy the client with now.sh
-* [] 🚀 Deploy the database with mlab
+* [*] 🚀 Deploy the database with mlab
 * [] 🚀 Deploy the server with now.sh
 
 ## Front-end
